@@ -16,7 +16,7 @@ public class WebConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
 //                .allowedOrigins("http://localhost:5173")
-//                .allowedOrigins("http://localhost:8011")
+                .allowedOrigins("http://localhost:8011")
 
                 /* Ingress 적용 이전 프론트 워커노드 포트에 대한 CORS 처리 */
             //    .allowedOrigins("http://localhost:30000")
